@@ -21,6 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Student diem tung binh"/>
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
     <Button
         android:id="@+id/buttonChooseImage"
         android:layout_width="match_parent"

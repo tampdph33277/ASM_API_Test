@@ -56,9 +56,9 @@ public class Student_Adapter extends RecyclerView.Adapter<Student_Adapter.Viewho
     public void onBindViewHolder(@NonNull Student_Adapter.Viewholder holder, int position) {
 
    Student_DTO student_dto= list_student.get(position);
-        holder.tvIdStudent.setText("Mã Sinh Vien: " + student_dto.getName());
-        holder.tvTenStudent.setText("Tên Loại: " + student_dto.getStudentId());
-        holder.tvDtbStudent.setText("Nhà Cung Cấp: " + student_dto.getAverageScore());
+        holder.tvIdStudent.setText("Tên Sinh viên: " + student_dto.getName());
+        holder.tvTenStudent.setText("Mã Sinh Vien: " + student_dto.getStudentId());
+        holder.tvDtbStudent.setText("Điểm trung bình: " + student_dto.getAverageScore());
         // Gán hình ảnh từ URL vào ImageView sử dụng thư viện Picasso
         Picasso.get().load(student_dto.getAvatar()).into(holder.imgAvatar);
 
@@ -161,4 +161,5 @@ String diemtb = editTextStudentDtb.getText().toString();
             imgEditStudent = itemView.findViewById(R.id.img_edit_student);
         }
     }
+    
 }
